@@ -1,0 +1,12 @@
+name: Use Checkout Action
+on: [push]
+
+jobs:
+  checkout-to-repo:
+    runs-on: ubuntu-latest
+    steps:
+      - name: List Files before Checkout
+        run: ls -a
+      - uses: actions/checkout@v4.1.1
+      - name: List Files after Checkout
+        run: ls -a
