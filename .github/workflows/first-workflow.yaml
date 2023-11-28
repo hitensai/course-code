@@ -14,7 +14,7 @@ jobs:
   parallel-mac-job:
     runs-on: macos-latest
     steps:
-      - name: Checks Sw verse
+      - name: Checks Sw version
         run: sw_vers
   dependant-windows-job:
     runs-on: windows-latest
@@ -22,3 +22,5 @@ jobs:
     steps:
       - name: echo a string
         run: Write-Output "windows String"
+      - name: Error Step
+        run: SomeRandom
