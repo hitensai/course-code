@@ -1,0 +1,14 @@
+name: workflow Commands
+on: [push]
+
+jobs:
+  workflow-cmds-mac:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Run bash commands
+        run: |
+          pwd
+          ls -a
+          echo $GITHUB_SHA
+          echo $GITHUB_REPOSITORY
+          echo $GITHUB_WORKSPACE
